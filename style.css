@@ -1,0 +1,601 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+.main
+{
+    background-image: url("img/slide_01.jpg");    
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    animation-name: main;
+    /* animation-delay: 1s; */
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes main
+{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.navbar
+{
+    height: 70px;
+    width: 100%;
+    
+}
+.logo
+{
+    width: 20%;
+    height: 70px;
+    transform: scale(0);
+    animation-name: logo;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes logo
+{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+.logo h2
+{
+    padding-top:20px;
+    padding-left: 80px;
+    color: white;
+    transition-duration: 2s;
+}
+.logo h2:hover
+{
+    color: wheat;
+    cursor: no-drop;
+    transition: all 2s;
+    transform: scale(1.5);
+}
+.menubar ul li
+{
+    color: white;
+    display: inline-block;
+    padding-left: 30px;
+    font-size: small;
+    transition-duration: 2s;
+}
+.menubar ul li:hover
+{
+    cursor: pointer;
+    color: wheat;
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+.menubar ul
+{
+    margin-left: 800px;
+    margin-top: -90px;
+    animation-name: list;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes list
+{
+    from{margin-top: -90px;}
+    to{margin-top: -45px;}
+}
+.main h4
+{
+    color: white;
+    text-align: center;
+    /* padding-top: -250px; */
+    margin-top: -250px;
+    animation-name: h4;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 4s;
+}
+@keyframes h4
+{
+    from{margin-top:-250px ;}
+    to{padding-top: 450px;}
+}
+.main h1
+{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transform: scale(0);
+    animation-name: h1;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    /* animation: red1 3s steps(15) infinite;
+    border-right: 2px solid black;
+    overflow: hidden;
+    white-space: nowrap; */
+}
+/* @keyframes red1
+{
+    0%{width: 0ch;}
+    100%{width: 19ch;}
+} */
+@keyframes h1
+{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+    
+}
+.main p
+{
+    text-align: center;
+    color: white;
+    opacity: 0;
+    line-height: 25px;
+    animation-name: p;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes p
+{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#btn
+{
+    width: 100px;
+    height: 40px;
+    background:rgb(138, 202, 202);
+    border: none;
+    outline-style: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 630px;
+    border-radius: 20px;
+    transition-duration: 0.7s;
+    opacity: 0;
+    /* transform: scale(0); */
+    animation-name: btn;
+    animation-delay: 9s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;    
+}
+@keyframes btn
+{
+    from{opacity: 0;}
+    to{opacity: 1;}
+    /* from{transform: scale(0);}
+    to{transform: scale(0.9);} */
+}
+#btn:hover
+{
+    cursor: pointer;
+    background: rgb(17, 124, 211);
+    transition:all 0.7s;
+    transform: scale(1.2);
+}
+.page2
+{
+    width: 100%;
+    height: 80vh;
+    background: silver;
+}
+.page2 h3
+{
+    text-align: center;
+    padding-top: 80px;
+}
+.line
+{
+    width: 70px;
+    height: 3px;
+    background: black;
+    text-align: center;
+    margin-left: 640px;
+    margin-top: 10px;
+}
+.box-container
+{
+    margin-left: 38px;
+    padding:1px;
+    
+}
+.box
+{
+    width: 250px;
+    height: 220px;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 15px 5px gray;
+    background: white;
+    position: relative;
+    transition-duration: 2s;
+    
+    
+}
+.box h3
+{
+    text-align: center;
+    padding-top: 80px;
+}
+.box p
+{
+    text-align: center;
+    padding-top: 20px;
+    color: gray;
+    transition-duration: 2s;
+}
+.box:hover
+{
+    background: palegreen;
+    box-shadow: 0px 0px 0px 0px;
+    color: white;   
+    cursor: pointer;
+    transition:all 2s;
+}
+.box:hover p
+{
+    color: white;
+    transition: all 2s;
+}
+.page3
+{
+    width: 100%;
+    height: 90vh;
+    background-image: url("img/what-we-do-bg.png");
+    background-size: 100% 100%;
+    color: white;    
+    position: relative;
+}
+.page3data h2
+{
+    padding-left: 90px;
+    padding-top: 80px;
+}
+.page3data p
+{
+    padding-left: 90px;
+    line-height: 25px;
+}
+#btn2
+{
+    width: 130px;
+    height: 38px;
+    font-size: 12px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    margin-left:90px;
+    margin-top: 40px;
+    outline-style: none;
+    transition-duration: 2s;   
+}
+#btn2:hover
+{
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition:all 2s;
+}
+#btn3
+{
+    width: 130px;
+    height: 38px;
+    font-size: 12px;
+    background: mediumspringgreen;
+    border: none;
+    border-radius: 20px;
+    margin-left: 20px;
+    outline-style: none;
+    transition-duration: 2s;
+}
+#btn3:hover
+{
+    background: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    transition: all 2s;
+}
+.page3 img
+{
+    position: absolute;
+    top: 80px;
+    left: 650px;
+    height: 400px;
+    width: 600px;
+}
+.page4
+{
+    width: 100%;
+    height: 90vh;
+    background: silver;
+    text-align: center;
+    
+}
+.page4 h3
+{
+    padding-top: 100px;
+}
+.page4 ul li
+{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 60px;
+    color: lightseagreen;
+    cursor: pointer;
+    font-weight: bold;
+}
+.img1 
+{
+    display: inline-block;
+    margin-top:60px;
+    margin-left: 50px;
+    background-size: 100% 100%;
+}
+.img1 img
+{
+    width: 250px;
+    height: 220px;
+}
+.page5
+{
+    width: 100%;
+    height: 100vh;
+    background: palegreen;
+    text-align: center;
+}
+.page5 h3
+{
+    padding-top: 70px;
+    color: white;
+}
+.line1
+{
+    width: 70px;
+    height: 3px;
+    background: white;
+    margin-left:638px;
+    margin-top: -5px;
+}
+.image1
+{
+    width: 530px;
+    height: 60vh;
+    margin-top: 70px;
+    margin-left: 120px;
+    position: relative;
+}
+.image1 img
+{
+    width: 530px;
+    height: 60vh;
+    margin-top: -29px;
+    
+}
+.image1title
+{
+    background: black;
+    height: 70px;
+    width: 530px;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.8;
+    
+}
+.bbb
+{
+    margin-bottom: 28px;
+}
+.image1title h4
+{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+}
+.image1title p
+{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.image2
+{
+    width: 530px;
+    height: 28vh;
+    margin-left:700px;
+    margin-top: -405px;
+    position: relative;
+}
+.image2 img
+{
+    width: 530px;
+    height: 28vh;
+}
+.image3
+{
+    width: 530px;
+    height: 28vh;
+    left:700px;
+    top: 27px;
+    position: relative;
+}
+.image3 img
+{
+    height: 28vh;
+    width: 530px;
+}
+.page6
+{
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+.page6box
+{
+    width: 230px;
+    height: 130px;
+    background: silver;
+    opacity: 0.5;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+.page6box h2
+{
+    color:green;
+    padding-top: 10px;
+        
+}
+.page6box p
+{
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+.contact
+{
+    width: 100%;
+    height: 95vh;
+    background-image: url("img/contact-bg.png");
+    margin-top:20px;
+    background-size: 100% 100%;
+}
+.contact h3
+{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+.mapimg
+{
+    width: 550px;
+    height: 300px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 80px;
+    position: relative;
+}
+.mapimg img
+{
+    width: 550px;
+    height: 300px;
+}
+#inp1
+{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    background-color:rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 13px;
+    outline-style: none;
+    border: none;
+    padding-left: 10px;
+}
+#inp2
+{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 890px;
+    outline-style: none;
+    border: none;
+    padding-left:10px;
+    background: rgba(255, 255, 255,0.1);
+    color: white;
+    font-size: 13px;
+}
+.mapimg textarea
+{
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline-style: none;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+#btn5 button
+{
+    width: 150px;
+    height: 40px;
+    background: yellowgreen;
+    color: white;
+    border: none;
+    position: absolute;
+    left: 600px;
+    top: 260px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: background 0.7s;
+    transition-property: color 0.7s;
+}
+#btn5 button:hover
+{
+    background: cyan;
+    cursor: pointer;
+    color: black;
+}
+.footer
+{
+    width: 100%;
+    height: 100px;
+    background:rgba(50, 54, 50, 0.9);
+}
+.footer p
+{
+    padding-left: 100px;
+    padding-top:50px;
+    font-size: 15px;
+    color: white;
+}
+.footer ul
+{
+    margin-top: -30px;
+    margin-left: 1000px;
+}
+.footer ul li
+{
+    display: inline-block;
+    margin-left: 5px;
+}
+.footer ul li a
+{
+    text-decoration: none;
+    background: seagreen;
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius:50% ;
+    text-align: center;
+    transition: all 0.7s;
+    
+    }
+.footer ul li a:hover
+{
+        background: greenyellow;
+        color: whitesmoke;
+}
+.footer ul li a i
+{
+    padding-top: 12px;
+}
